@@ -20,11 +20,19 @@
     <link href="bootstrap-social-4.10.1/bootstrap-social.css" rel="stylesheet" />
     <link href="CSS/Custom.css" rel="stylesheet" />
 
+    <!--Body Color-->
+    <style>
+        body {
+            background-color: #CCCC99;
+        }
+    </style>
+
     <title>Crave The Food</title>
 </head>
 <body>
-    <!-- Static navbar -->
-    <nav class="navbar navbar-inverse">
+
+    <!-- Fixed top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -33,55 +41,246 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <p class="navbar-brand">Crave The Food</p>
-                <!--<a class="navbar-brand" href="#">Crave The Food</a>-->
+                <a href="#home" class="navbar-brand">Crave The Food</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="Home">Home</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="breakfast">Breakfast</a></li>
-                            <li><a href="lunch">Lunch</a></li>
-                            <li><a href="dinner">Dinner</a></li>
-                            <li><a href="catering">Catering</a></li>
+                            <li><a href="#breakfast">Breakfast</a></li>
+                            <li><a href="#lunch">Lunch</a></li>
+                            <li><a href="#dinner">Dinner</a></li>
+                            <li><a href="#catering">Catering</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#about">About</a></li>
                 </ul>
+                <div class="navbar-text pull-right">
+                    <a href="https://www.facebook.com/CraveTheFood?fref=ts"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="http://www.yelp.com/biz/crave-the-food-harrisburg"><i class="fa fa-yelp fa-2x"></i></a>
+                </div>
             </div>
             <!--/.nav-collapse -->
         </div>
         <!--/.container-->
     </nav>
 
-    <!--Content Container-->
-    <div class="container">
-        <div id="about">
-            <h1>About</h1>
-            <p>Mark Ghatas</p>
-            <p>4010 Jonestown Rd</p>
-            <p>Harrisburg, Pennsylvania 17109</p>
-        </div>
+    <!--Logo Content Container-->
+    <div class="container" id="home">
+        <img src="images/logo.JPG" class="img-responsive" />
     </div>
-    <!-- /content container -->
+    <!--/.container-->
 
 
-    <!--Footer Info-->
-    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-            <div class="navbar-text pull-left">
-                <p class="text-muted">2015 Crave The Food</p>
-            </div>
-            <div class="navbar-text pull-right">
-                <a href="https://www.facebook.com/CraveTheFood?fref=ts"><i class="fa fa-facebook-square fa-2x"></i></a>
-                <!--Still the need the Google + account made...-->
-                <a><i class="fa fa-google-plus fa-2x"></i></a>
-                <a href="http://www.yelp.com/biz/crave-the-food-harrisburg"><i class="fa fa-yelp fa-2x"></i></a>
-            </div>
-        </div>
+    <!--Dinner Content Container-->
+    <div class="container" id="dinner">
+        <h1>Dinner Menu</h1>
+        <section>
+            <h4>Shareable Plates</h4>
+            <ul>
+                <li>Fried Cauliower 7</li>
+                <li>Spicy Chorizo Meatballs (3) 7</li>
+                <li>Onion Rings / 5.5</li>
+                <li>Spinach & Artichoke Dip 7</li>
+                <li>Chicken Tenders (4) 7 - Served w/ barbeque sauce</li>
+                <li>Buffalo Chicken Stuffed Wontons 8 - Served w/ blue cheese & buffalo sauce</li>
+                <li>Boneless Bualo Wings 7 - Served w/ celery & blue cheese</li>
+                <li>Loaded Baked Potato Bites 7 - Bacon, cheddar, sour cream</li>
+                <li>Shrimp Bruschetta 9 - Shrimp, tarragon, arugula, garlic & tomato on focaccia</li>
+                <li>Bruschetta 6 - Tomato, basil & fresh mozzarella on focaccia</li>
+                <li>Fried Calamari 9 - Served w/ lemon zest & marinara sauce</li>
+            </ul>
+            <h4>Crave Combo Pick Two / 6 • Pick Three / 9 • Pick Four / 12</h4>
+            <ul>
+                <li>Chicken tenders, onion rings, boneless buffalo chicken wings, buffalo chicken, stuffed wontons, loaded baked potato bites</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Soups</h4>
+            <ul>
+                <li>Homemade Soup cup 3 • bowl 4.5</li>
+                <li>Signature Chicken Corn Chowder cup 3 • bowl 4.5</li>
+                <li>French Onion Soup 5</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Salads</h4>
+            <ul>
+                <li>House Garden Salad 3</li>
+                <li>Wedge Salad Bacon, gorgonzola cream, heirloom, tomato & fried shallots 6</li>
+                <li>Caesar Salad Baby romaine, parmesan cheese & croutons 7 Grilled chicken 3 • Cajun Chicken 3.5 • Shrimp 4 • Salmon 6</li>
+                <li>Pittsburgh Salad Iceberg lettuce topped with sliced steak, roasted peppers, tomato, red onion & topped with crisp cheesy fries 10</li>
+                <li>Greek Salad Kalamata olives, feta, shallots, heirloom tomato, cucumber & homemade Greek dressing 7.5</li>
+                <li>Caprese Salad Tomato, basil, fresh mozzarella & topped with balsamic glaze 8</li>
+                <li>Buffalo Chicken Salad Grilled or fried chicken. Iceberg lettuce topped with crisp bualo chicken strips, roasted peppers, tomato & gorgonzola cream 9</li>
+                <li>Citrus Spinach Salad Fresh baby spinach, fresh strawberries, mandarin oranges, pecans & tossed w/ a fat free citrus vinaigrette. – 495 Cal 8.5 Grilled Chicken 3 • Cajun Chicken 3.5 • Shrimp 4</li>
+                <li>Cobb Salad Iceberg lettuce topped with grilled chicken, bacon, tomato, hard-boiled egg & gorgonzola cream 9</li>
+            </ul>
+        </section>
+        <section>
+            <h4>Handhelds</h4>
+            <h5>SLIDERS choice of fries or side salad</h5>
+            <ul>
+                <li>Mini burgers (2) 7</li>
+                <li>Chorizo Meatball (2) 7</li>
+                <li>Pulled Pork (2) 7</li>
+                <li>Short Rib (2) 9</li>
+                <li>Lump Crab Cake (2) 12</li>
+            </ul>
+            <h5>SPECIALTY SANDWICHES</h5>
+            <ul>
+                <li>Iceberg BLT 6 - Applewood smoked bacon and tomato embraced by a bun of iceberg lettuce with cucumber sauce.</li>
+                <li>Brisket/Corned Beef/Pastrami 8.5 - Fresh sliced, topped w/ coleslaw & crisp fries piled high on a brioche roll.</li>
+                <li>Pesto Chicken 8.5 - Grilled chicken, provolone cheese, fresh baby spinach, tomato & pesto served on brioche roll. </li>
+                <li>Turkey, Bacon, Ranch 8 - Sliced turkey, applewood smoked bacon, Swiss cheese, lettuce, tomato & ranch served on a brioche roll.</li>
+            </ul>
+            <h5>BURGERS - PRIME half pound burgers served on Brioche with lettuce, tomato and pickle. Choice of French fries or side salad. Veggie Burger available upon request.</h5>
+            <h5>Add any of these ingredients. Bacon 1.5 · Red onion, sauteed onion, fried shallots, roasted pepper, jalapeno .5 · Cheese: American, cheddar, Swiss, provolone, feta .5</h5>
+            <ul>
+                <li>Plain Burger 7.5</li>
+                <li>Bacon 8.5</li>
+                <li>Mushroom 8.5</li>
+                <li>Texas Burger 9 - Bacon, bbq sauce, melted cheddar cheese served on Texas toast</li>
+                <li>Black & Gorgonzola Burger 9 - Cajun & gorgonzola cheese</li>
+                <li>CRAVE Burger 10 - Fried shallots, munster cheese & sriracha aioli</li>
+            </ul>
+        </section>
+        <section>
+            <h4>FLATBREADS</h4>
+            <ul>
+                <li>Pepperoni 7 - Marinara sauce, pepperoni, mozzarella cheese</li>
+                <li>Buffalo Chicken 8 - Crisp chicken tender pieces, buffalo wing sauce, bacon bits, cheddar cheese, & ranch</li>
+                <li>Chicken Parmesan 8 - Chrisp Chicken tender pieces, marinara sauce, & mozzarella cheese</li>
+                <li>Chorizo 8 - Spicy sausage, mozzarella cheese, roasted peppers, & caramelized onions</li>
+                <li>Philly Cheese Steak 8 - Sliced steak, caramelized onions and peppers, roasted mushrooms, & asiago cheese</li>
+                <li>Portabella 9.5 - Portabella mushroom, eggplant, roasted, peppers & asiago cheese</li>
+            </ul>
+        </section>
+        <section>
+            <h4>ENTREES</h4>
+            <ul>
+                <li>Short Rib 17 - Topped with a cabernet demi</li>
+                <li>Middle Eastern Style Liver 12 - Sliced and sautéed with onions and peppers. Served with rice & Mediterranean salad. </li>
+                <li>Rosemary Chicken 13 - Sautéed chicken in a lemon garlic sauce seasoned with rosemary</li>
+                <li>Meatloaf 11 - Wrapped in bacon & topped with a demi-glace.</li>
+            </ul>
+        </section>
+        <section>
+            <h4>SEAFOOD</h4>
+            <ul>
+                <li>Short & Tail 26 - Short Rib & Lobster Tail (6oz), Served with two sides</li>
+                <li>Catch of the day market price</li>
+                <li>Lobster Tails market price - Two 6oz lobster tails</li>
+                <li>Fish & Chips 15 - House battered fried fresh sh served w/ crispy Old Bay fries & one side</li>
+                <li>Fried Seafood Combo 26 - Crab cake, scallops, shrimp & house battered fresh sh. Served w/ roasted red pepper aioli. Topped with a lemon garlic medley of red & green pepper, onion, parsley & cilantro. Served with Mediterranean salad and rice pilaf.</li>
+                <li>Jumbo Lump Crab Cakes 22 - Served w/ roasted red pepper aioli</li>
+                <li>Fried Shrimp Platter 15 - House battered & cooked to a crisp, Served w/Old Bay fries & one side</li>
+            </ul>
+        </section>
+        <section>
+            <h4>HAND - CUT STEAK & CHOPS - Served with two sides</h4>
+            <ul>
+                <li>Ribeye 12oz 17 16oz 20</li>
+                <li>New York Strip 12oz 17 16oz 20</li>
+                <li>Filet Minion 8oz 24</li>
+                <li>Smother Your Steak 1.5 - Sautéed Onions & Sautéed Mushrooms</li>
+                <li>Add grilled Chicken 3</li>
+                <li>Add grilled Shrimp 4</li>
+                <li>Bone-in Pork Steak 18 - 12oz tender pork chop over mashed potatoes, topped with apple & Jicama cider glaze. Served with one side.</li>
+            </ul>
+        </section>
+        <section>
+            <h4>HOUSE SPECIALTY</h4>
+            <ul>
+                <li>RACK OF LAMB 25 - Herb crusted rack of lamb. Served with mashed potatoes & roasted tomatoes</li>
+            </ul>
+        </section>
+        <section>
+            <h4>EXCEPTIONAL PASTA DISHES - Served with one side & homemade garlic bread</h4>
+            <ul>
+                <li>Chicken or Shrimp Primavera 15 - Mushrooms, red & green peppers & spinach in a garlic sauce</li>
+                <li>Chicken Carbonara 15 - Sauteed pancetta and asparagus over linguini </li>
+                <li>Chicken Parmesan 14 - Served with spaghetti</li>
+                <li>Chicken Marsala 15 - Mushroom marsala wine sauce served with linguini or rice</li>
+                <li>Chicken Francaise 15 - Lemon butter white wine sauce with choice of pasta or rice</li>
+                <li>Fettuccini Alfredo 9 - With chicken 12 With Cajun chicken 12.5 With lump crab 14</li>
+                <li>Pasta Marinara 9 - choice of: spaghetti, rigatoni, penne or linguini With meatballs 11 With grilled chicken 12 With grilled shrimp 13</li>
+                <li>Seafood Fra Diablo 19 - Shrimp, scallops & lump crab tossed in a spicy marinara sauce over linguini</li>
+            </ul>
+        </section>
+        <section>
+            <h4>SAVORY SIDES</h4>
+            <ul>
+                <li>French fries</li>
+                <li>Mashed potatoes</li>
+                <li>Baked potato</li>
+                <li>Rice pilaf</li>
+                <li>Couscous</li>
+                <li>Vegetable of the day</li>
+                <li>Grilled asparagus</li>
+                <li>Sautéed spinach </li>
+                <li>Side salad</li>
+                <li>Side Caesar salad</li>
+            </ul>
+        </section>
+        <section>
+            <h4>COLD BEVERAGES</h4>
+            <ul>
+                <li>FRESH SQUEEZED OJ 2.5</li>
+                <li>BOTTLED WATER 1.5</li>
+                <li>CRANBERRY JUICE 2.5</li>
+                <li>MANGO JUICE 2.5</li>
+                <li>TOMATO JUICE 2.5</li>
+                <li>APPLE JUICE 2.5</li>
+                <li>ALMOND MILK 2</li>
+                <li>CHOCOLATE MILK 2</li>
+                <li>ICED TEA 2</li>
+                <li>MILK (2%) 2</li>
+                <li>ICED CAPPUCINO 2.5</li>
+                <li>ICED COFFEE* 2</li>
+                <li>SOFT DRINKS (PEPSI) 2</li>
+            </ul>
+        </section>
+        <section>
+            <h4>HOT BEVERAGES - *REGULAR AND DECAF AVAILABLE</h4>
+            <ul>
+                <li>ESPRESSO* 2.5</li>
+                <li>DOUBLE 3</li>
+                <li>CAPPUCCINO* 2.5</li>
+                <li>LATTE* 3</li>
+                <li>BOTTOMLESS COFFEE* 1.75</li>
+                <li>HOT CHOCOLATE 2</li>
+                <li>AMERICANO* 2.5</li>
+                <li>HOT TEA* 1.75</li>
+                <li>SAHLEB 2.5 - Egyptian milk based beverage</li>
+                <li>MOCHA* 3 </li>
+                <li>HERBAL TEA 2</li>
+            </ul>
+        </section>
     </div>
+    <!-- Dinner /content container-->
+
+    <!--ABOUT Content Container-->
+    <div class="container" id="about">
+        <h1>About</h1>
+        <p>Address: 4010 Jonestown Rd</p>
+        <p>Harrisburg, Pennsylvania 17109</p>
+        <p>Email: Cravethefood@gmail.com</p>
+        <p>Phone: (717)545-0700</p>
+        <p>Breakfast Hours: 8AM-2PM</p>
+        <p>Lunch Hours: 11AM-4PM</p>
+        <p>Dinner Hours: 4PM-10PM</p>
+        <p>Saturday & Sunday Brunch: 11AM-2PM</p>
+    </div>
+    <!-- About /content container-->
+
+    <!--LOCATION Content Container-->
+    <div class="container" id="location">
+        <h1>Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.1104691591963!2d-76.82966798425255!3d40.29550607092652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c7583fc16a4b%3A0xc7b7956e09e5c723!2sCRAVE+THE+FOOD!5e0!3m2!1sen!2sus!4v1444796035513" width="800" height="600" frameborder="0" style="border: 0" allowfullscreen></iframe>
+    </div>
+    <!-- Location/content container-->
 </body>
 </html>

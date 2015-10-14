@@ -1,4 +1,8 @@
 ﻿.navbar-text > a {
-    color: inherit; 
+    color: inherit;
     text-decoration: none;
+}
+
+body {
+    padding-top: 70px;
 }
