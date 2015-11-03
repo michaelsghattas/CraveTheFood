@@ -23,13 +23,33 @@
     <!--Body Color-->
     <style>
         body {
-            background-color: #CCCC99;
+            <!-- background-color: #CCCC99; -->
         }
+        /* Flexible iFrame */
+
+        .Flexible-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+            .Flexible-container iframe,
+            .Flexible-container object,
+            .Flexible-container embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
     </style>
 
     <title>Crave The Food</title>
 </head>
 <body>
+    <!-- Navbar Container-->
 
     <!-- Fixed top navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -56,25 +76,68 @@
                     </li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#story">Our Story</a></li>
                 </ul>
                 <div class="navbar-text pull-right">
                     <a href="https://www.facebook.com/CraveTheFood?fref=ts"><i class="fa fa-facebook-square fa-2x"></i></a>
                     <a href="http://www.yelp.com/biz/crave-the-food-harrisburg"><i class="fa fa-yelp fa-2x"></i></a>
                 </div>
             </div>
-            <!--/.nav-collapse -->
         </div>
-        <!--/.container-->
+        <!--/.nav-collapse -->
     </nav>
+    <!--/.navbar container end-->
 
     <!--Logo Content Container-->
     <div class="container" id="home">
-        <img src="images/logo.JPG" class="img-responsive" />
+        <img src="images/logo_light.JPG" class="img-responsive" />
     </div>
     <!--/.container-->
 
+    <!--Our Story Content Container-->
+    <div class="container">
+        <div class="jumbotron" id="story">
+            <h1>Our Story</h1>
+            <h2>What we do differently</h2>
+            <p>We are reinventing the dining experience with a menu full of American classics with a new twist for today's lifestyle. 
+                 Our dishes are individualy and exquistly prepared with only the finest ingredients to ensure that every bite will satisfy your craving.</p>
+            <h2>Our Goal</h2>
+            <p>To satisfy cravings, one bite at a time.</p>
+            <h2>Our Promise</h2>
+            <p>We promise to strive to make your dining experience the best it can possibly be, every time you visit.</p>
+            <ul>
+                <li>Our restaurant will always be sparkling clean.</li>
+                <li>Your food will always be 100% right.</li>
+                <li>You will receive prompt service with a smile.</li>
+            </ul>
+            <h2>Catering</h2>
+            <p>Once you enjoy the dining experience offered at Crave, you can look forward to trusting us with all of your catering needs.  
+                We are happy to accomodate anything from a small intimate gathering, business meetings to large celebrations.</p>
+            <h2>Meetings</h2>
+            <p>Need a place to meet?  Allow us to host your corporate meeting or special gathering.  We would be honored to have you!</p>
+            <h2>Crave is a BYOB establishment</h2>
+            <p>Feel free to bring your own bottle to compliment our dining selections.</p>
+        </div>
+    </div>
+    <!--/.container-->
 
-    <!--Dinner Content Container-->
+    <!--Lunch Menu Content Container-->
+    <div class="container" id="lunch">
+        <h1>Lunch Menu</h1>
+    </div>
+    <!--Lunch /content container -->
+
+    <!--Dinner Menu Content Container-->
+    <div class="container" id="dinner">
+        <h1>Dinner Menu</h1>
+        <!--<object data="images/DinnerFront_Tabloid.pdf" type="application/pdf" height="900px" width="100%">
+            <a href="images/DinnerFront_Tabloid.pdf">images/DinnerFront_Tabloid.pdf</a>
+        </object>
+        <iframe src="images/DinnerFront_Tabloid.pdf" frameborder="0"></iframe>-->
+    </div>
+    <!--/.container-->
+
+    <!--Dinner Content Container
     <div class="container" id="dinner">
         <h1>Dinner Menu</h1>
         <section>
@@ -260,26 +323,26 @@
             </ul>
         </section>
     </div>
-    <!-- Dinner /content container-->
+    <!--Dinner /content container-->
 
     <!--ABOUT Content Container-->
     <div class="container" id="about">
         <h1>About</h1>
         <p>Address: 4010 Jonestown Rd</p>
         <p>Harrisburg, Pennsylvania 17109</p>
-        <p>Email: Cravethefood@gmail.com</p>
-        <p>Phone: (717)545-0700</p>
+        <p>Email: <a href="mailto:Cravethefood@gmail.com">Cravethefood@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1-717-545-0700">1-717-545-0700</a></p>
         <p>Breakfast Hours: 8AM-2PM</p>
         <p>Lunch Hours: 11AM-4PM</p>
         <p>Dinner Hours: 4PM-10PM</p>
-        <p>Saturday & Sunday Brunch: 11AM-2PM</p>
+        <p>Saturday & Sunday Brunch: 10AM-2PM</p>
     </div>
     <!-- About /content container-->
 
     <!--LOCATION Content Container-->
     <div class="container" id="location">
         <h1>Location</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.1104691591963!2d-76.82966798425255!3d40.29550607092652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c7583fc16a4b%3A0xc7b7956e09e5c723!2sCRAVE+THE+FOOD!5e0!3m2!1sen!2sus!4v1444796035513" width="800" height="600" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3043.1104691591963!2d-76.82966798425255!3d40.29550607092652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8c7583fc16a4b%3A0xc7b7956e09e5c723!2sCRAVE+THE+FOOD!5e0!3m2!1sen!2sus!4v1444796035513"></iframe>
     </div>
     <!-- Location/content container-->
 </body>
