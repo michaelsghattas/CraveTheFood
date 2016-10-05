@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS & JS & Optional Theme  ---- USE THIS WHEN DEPLOYING-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!--Custom Jquery funcs-->
+    <script>
+        $(document).ready(function () {
+            //Init Page Load
+            $(document).ready(function () {
+                $('#content').load('Logo.html');
+            });
+            //Home func
+            $("#homeLink").click(function () {
+                $('#content').load('Logo.html');
+            });
+            //Our Story func
+            $("#ourStoryLink").click(function () {
+                $('#content').load('OurStory.html');
+            });
+            //Breakfast func
+            $("#breakfastLink").click(function () {
+                $('#content').load('Breakfast.html');
+            });
+            //Lunch func
+            $("#lunchLink").click(function () {
+                $('#content').load('Lunch.html');
+            });
+            //Dinner func
+            $("#dinnerLink").click(function () {
+                $('#content').load('Dinner.html');
+            });
+            //Gallery func
+            $("#galleryLink").click(function () {
+                $('#content').load('Gallery.html');
+            });
+            //Location func
+            $("#locationLink").click(function () {
+                $('#content').load('Location.html');
+            });
+            //About func
+            $("#aboutLink").click(function () {
+                $('#content').load('About.html');
+            });
+        });
+    </script>
+    <!--./Custom Jquery funcs-->
+    <!--Custom CSS-->
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        /*
+        @media screen and (max-width: 768px) {
+            body {
+                padding-top: 0px;
+            }
+        }
+            */
+        .navbar-text > a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+    <!--./Custom CSS-->
+    <title>Crave The Food</title>
+</head>
+<body>
+    <!-- Fixed top navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="homeLink" href="#content" class="navbar-brand" data-toggle="collapse" data-target="#navbar">Home</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a id="ourStoryLink" href="#content" data-toggle="collapse" data-target="#navbar">Our Story</a></li>
+                    <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a id="breakfastLink" href="#content" data-toggle="collapse" data-target="#navbar">Breakfast</a></li>
+                            <li><a id="lunchLink" href="#content" data-toggle="collapse" data-target="#navbar">Lunch</a></li>
+                            <li><a id="dinnerLink" href="#content" data-toggle="collapse" data-target="#navbar">Dinner</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="galleryLink" href="#content" data-toggle="collapse" data-target="#navbar">Gallery</a></li>
+                    <li><a id="locationLink" href="#content" data-toggle="collapse" data-target="#navbar">Location</a></li>
+                    <li><a id="aboutLink" href="#content" data-toggle="collapse" data-target="#navbar">About</a></li>
+                </ul>
+                <div class="navbar-text pull-right">
+                    <a href="https://www.facebook.com/CraveTheFood?fref=ts" title="Crave The Food Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="http://www.yelp.com/biz/crave-the-food-harrisburg" title="Crave The Food Yelp"><i class="fa fa-yelp fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
+    <!--/.navbar container end-->
+    <!--Content Div-->
+    <div id="content" class="container">
+
+    </div>
+    <!--./Content Div-->
+</body>
+</html>
