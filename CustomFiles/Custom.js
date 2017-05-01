@@ -1,37 +1,36 @@
 ﻿$(document).ready(function () {
     //Init Page Load
-    $(document).ready(function () {
-        $('#content').load('Logo.html');
-    });
-    //Home func
+    $('#content').load('Logo.html');
+
+    //Load Home
     $("#homeLink").click(function () {
         $('#content').load('Logo.html');
     });
-    //Our Story func
+    //Load Our Story
     $("#ourStoryLink").click(function () {
         $('#content').load('OurStory.html');
     });
-    //Breakfast func
+    //Load Breakfast
     $("#breakfastLink").click(function () {
         $('#content').load('Breakfast.html');
     });
-    //Lunch func
+    //Load Lunch
     $("#lunchLink").click(function () {
         $('#content').load('Lunch.html');
     });
-    //Dinner func
+    //Load Dinner
     $("#dinnerLink").click(function () {
         $('#content').load('Dinner.html');
     });
-    //Gallery func
+    //Load Gallery
     $("#galleryLink").click(function () {
         $('#content').load('Gallery.html');
     });
-    //Location func
+    //Load Location
     $("#locationLink").click(function () {
         $('#content').load('Location.html');
     });
-    //About func
+    //Load About
     $("#aboutLink").click(function () {
         $('#content').load('About.html');
     });
