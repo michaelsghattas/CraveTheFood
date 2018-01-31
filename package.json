@@ -1,0 +1,25 @@
+{
+  "name": "cravethefood",
+  "version": "1.0.0",
+  "description": "packages for site",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelsghattas/CraveTheFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelsghattas/CraveTheFood/issues"
+  },
+  "homepage": "https://github.com/michaelsghattas/CraveTheFood#readme"
+}
