@@ -1,1 +1,2 @@
-# CraveTheFood
+# Crave The Food Website
+## Created by Michael Ghattas
