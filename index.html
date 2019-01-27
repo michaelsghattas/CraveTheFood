@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Crave the Food Website">
+    <meta name="keywords" content="Food, Menu, Crave, Restaurant">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="/custom.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Crave The Food</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="homeLink" href="#" class="navbar-brand">Home</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a id="ourStoryLink" href="#">Our Story</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a id="breakfastLink" href="#">Breakfast</a></li>
+                            <li><a id="lunchLink" href="#">Lunch</a></li>
+                            <li><a id="dinnerLink" href="#">Dinner</a></li>
+                            <li><a id="cateringLink" href="#">Catering</a></li>
+                        </ul>
+                    </li>
+                    <li><a id="galleryLink" href="#">Gallery</a></li>
+                    <li><a id="locationLink" href="#">Location</a></li>
+                    <li><a id="aboutLink" href="#">About</a></li>
+                    <li><a href="http://www.opentable.com/single.aspx?rid=343153&restref=343153">Reservation</a></li>
+                    <li>
+                        <a href="https://ordering.chownow.com/order/7767/locations?add_cn_ordering_class=true" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="chownow-order-online" style=" background-color: #e40000; color: #FFFFFF; -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);border-radius: 10px; padding: 10px;">ORDER ONLINE</span></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://www.facebook.com/CraveTheFood?fref=ts" title="Crave The Food Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.yelp.com/biz/crave-the-food-harrisburg" title="Crave The Food Yelp"><i class="fa fa-yelp fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content" class="container">
+    </div>
+    <!-- JS files at bottom -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <!--ChowNow js files no idea-->
+    <script src="https://cf.chownowcdn.com/latest/static/integrations/ordering-modal.min.js" data-chownow-company-id="7767"></script>
+    <!-- Custom JS/CSS files-->
+    <script src="/app.js"></script>
+</body>
+</html>
